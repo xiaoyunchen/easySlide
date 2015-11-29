@@ -5,6 +5,10 @@
 	
 	//引入并创建多个独立slideModule模块
 	var slideModule=require("../module/slide.js");
-	new slideModule('iccAdvisorPicture');
-	new slideModule('iccAdvisorPicture2',465,4000,800);
+	new slideModule({dom:$('[node-type="iccAdvisorPicture"]')});
+	new slideModule({
+		dom:$('[node-type="iccAdvisorPicture2"]'),
+		delay:4000,
+		duration:800
+	});
 })();
