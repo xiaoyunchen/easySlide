@@ -1,0 +1,31 @@
+{
+  "name": "easySlide",
+  "version": "1.0.0",
+  "description": "简单的图片轮播组件，同时应用了webpack打包",
+  "main": "index.html",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaoyunchen/easySlide.git"
+  },
+  "keywords": [
+    "picture",
+    "slide",
+    "with",
+    "webpack"
+  ],
+  "author": "chenyun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xiaoyunchen/easySlide/issues"
+  },
+  "homepage": "https://github.com/xiaoyunchen/easySlide",
+  "devDependencies": {
+    "css-loader": "^0.23.0",
+    "file-loader": "^0.8.5",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.9"
+  }
+}

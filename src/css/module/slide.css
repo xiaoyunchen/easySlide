@@ -1,0 +1,14 @@
+.pictureShow {
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 10px;
+    width: 455px;
+}
+.pictureShow ul {
+    width: 2000px;
+}
+.pictureShow ul li {
+    float: left;
+    margin-right: 10px;
+}
