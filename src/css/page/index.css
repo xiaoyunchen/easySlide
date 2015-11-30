@@ -1,6 +1,13 @@
-.pictureShowWrapper{
+.pageContent{
 	width: 100%;
 }
-.pictureShowWrapper .pictureShow{
+
+/**content*/
+.pictureShowWrapper{
+	width: 1000px;
 	margin: 0 auto;
 }
+.pictureShowWrapper .pictureShow{
+	margin: 50px auto 0;
+}
+

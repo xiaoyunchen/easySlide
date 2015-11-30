@@ -6,7 +6,7 @@ module.exports = {
     		delegate:"./src/js/page/jsEvent.js"
     	},
     output: {
-        path: path.join(__dirname,'dist'),
+        path: path.join(__dirname,'dist2'),
         filename: "[name].js"
     },
     module: {
@@ -24,6 +24,10 @@ module.exports = {
 		    },
 		    except: ['$super', '$', 'exports', 'require']	//排除关键字
 		}),
-		new webpack.optimize.CommonsChunkPlugin("commons.js", ["index", "delegate"])
+		new webpack.optimize.CommonsChunkPlugin({
+			names:['index','delegate'],
+			children: true,
+			async: true
+		})
     ]
 };

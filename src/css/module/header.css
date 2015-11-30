@@ -1,0 +1,38 @@
+.headerWrapper{
+	width: 100%;
+	background-color: #f5f5f5;
+    border-bottom: 1px solid #e5e5e5;
+}
+.headerWrapper .pageHeader{
+	width: 1000px;
+	min-width: 1000px;
+	margin: 0 auto;
+}
+.headerWrapper.header-fixed{
+	position: fixed;
+	top: 0px;
+}
+.pageHeader>ul{
+	float: right;
+}
+.pageHeader>ul>li{
+	float: left;
+	margin: 0 30px;
+}
+.pageHeader>ul>li>a{
+	display: inline-block;
+	height: 78px;
+	line-height: 78px;
+	font-size: 18px;
+	color: #333;
+	transition: all 0.4s ease-in-out;
+	border-bottom: 2px solid #f5f5f5;
+}
+.pageHeader>ul>li:hover>a{
+	color: #f90;
+	border-bottom: 2px solid #f90;
+}
+.headerWrapper.header-fixed .pageHeader>ul>li>a{
+	height: 40px;
+	line-height: 40px;
+}
