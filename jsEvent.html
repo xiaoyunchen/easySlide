@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS事件委托</title>
+		<meta name="author" content="https://github.com/xiaoyunchen/easySlide"/>
+		<meta name="description" content="JavaScript 原生事件 事件委托"/>
+		<meta name="date" content="2015-11-27"/>
+	</head>
+	<body>
+		<div class="pageContent">
+			<!--header-->
+			<div class="headerWrapper">
+				<div class="pageHeader clearfix">
+					<ul class="clearfix">
+						<li>
+							<a target="_blank" href="/index.html" title="首页">Home</a>
+						</li>
+						<li>
+							<a target="_blank" href="/index2.html" title="合并commons">Commons</a>
+						</li>
+						<li>
+							<a href="https://github.com/xiaoyunchen/easySlide" target="_blank" title="返回github查看源码">Github</a>
+						</li>
+						<li>
+							<a href="http://www.cnblogs.com/souvenir/" target="_blank" title="访问我的博客">Blog</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!--事件委托-->
+			<div class="listWrapper clearfix" id="listWrapper">
+				<div class="list">
+					<button id="btn1">Add!</button>
+					<ul id="list1">
+						<li id="hello">
+							Hello
+						</li>
+						<li id="world">
+							World
+						</li>
+						<li id="welcome">
+							Welcome!
+						</li>
+					</ul>
+				</div>
+				
+				<div class="list">
+					<button id="btn2">添加!</button>
+					<ul id="list2">
+						<li id="Baidu">
+							Baidu
+						</li>
+						<li id="Alibaba">
+							Alibaba
+						</li>
+						<li id="Tencent">
+							Tencent
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			
+			<!--footer-->
+			<div class="footerWrapper">
+				<div class="pageFooter">
+					<p>小侠同学 @ 2015</p>
+				</div>
+			</div>
+		</div>
+		<script src="dist/commons.js" type="text/javascript" charset="utf-8"></script>
+		<script src="dist/delegate.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
