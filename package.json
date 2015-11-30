@@ -1,6 +1,6 @@
 {
   "name": "easySlide",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "简单的图片轮播组件，同时应用了webpack打包",
   "main": "index.html",
   "scripts": {
