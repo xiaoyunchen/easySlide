@@ -20,4 +20,19 @@
 		delay:3500,
 		duration:1000
 	});
+	
+	//添加对话框事件
+	var pageDialog=false;
+	$('.pictureShow a').click(function(){
+		var _id=$(this).attr('dialog-for');
+		require.ensure(["../module/dialog.js","../module/dialogConfig.js"], function(require) {
+			var dialogModule=require("../module/dialog.js");
+			var dialogConfig=require("../module/dialogConfig.js");
+			if(!pageDialog){	//判断对话框组件是否存在，避免重复创建
+				pageDialog=new dialogModule();
+			}
+			pageDialog.openDialogWith(dialogConfig[_id]);
+		});
+	});
+	
 })();

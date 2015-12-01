@@ -1,0 +1,77 @@
+.dialogWrapper {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: none;
+}
+.dialogWrapper .dialogMask{
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.dialogWrapper .dialog{
+	background: #ffffff none repeat scroll 0 0;
+    border-radius: 4px;
+    margin: 100px auto;
+    padding: 25px 55px 35px;
+    position: relative;
+    width: 991px;
+}
+.dialog .dialogHeader h2{
+	color: #1699cd;
+    font-size: 36px;
+    text-align: center;
+}
+.dialog .dialogSummary{
+	margin: 45px 0 85px;
+}
+.dialog .dialogSummary p{
+	color: #30353f;
+    font-size: 24px;
+    text-align: center;
+}
+.dialog .dialogContent .dialogPic{
+	float: left;
+	background-color: #eaeaea;
+    border-radius: 4px;
+    padding: 6px;
+    width: 420px;
+}
+.dialog .dialogContent .dialogPic img{
+	max-width: 420px;
+}
+.dialog .dialogContent .dialogText{
+	float: right;
+	height: 296px;
+    line-height: 296px;
+    margin-left: 50px;
+    width: 509px;
+}
+.dialog .dialogContent .dialogText span{
+    display: inline-block;
+	color: #666666;
+    font-size: 14px;
+    line-height: 1.6em;
+}
+
+.dialog .dialogClose{
+	position: absolute;
+    right: -125px;
+    top: 0;
+}
+.dialog .dialogClose em{
+	background: url(../../img/icon.png) no-repeat;
+	height: 75px;
+    width: 76px;
+    background-position: 0 -75px;
+    transition: background-position 0.2s ease-in-out;
+    display: inline-block;
+}
+.dialog .dialogClose a:hover em{
+	background-position: 0 0;
+}
