@@ -7,11 +7,15 @@ module.exports = {
     	},
     output: {
         path: path.join(__dirname,'dist'),
-        filename: "[name].js"
+        publicPath: "/easySlide/dist/",
+        filename: "[name].js",
+        chunkFilename: "[id].chunk.js"
     },
     module: {
-        loaders: [	//css加载器
-            { test: /\.css$/, loader: "style!css" }
+        loaders: [	//加载器
+            {test: /\.css$/, loader: "style!css" },
+            {test: /\.html$/, loader: "html" },
+            {test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'}
         ]
     },
     plugins:[
