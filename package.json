@@ -4,7 +4,8 @@
   "description": "简单的图片轮播组件，同时应用了webpack打包",
   "main": "index.html",
   "scripts": {
-    "test": "none"
+    "build": "webpack",
+    "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "css-loader": "^0.23.0",
     "file-loader": "^0.8.5",
     "url-loader": "^0.5.7",
-    "webpack": "^1.12.9"
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
   }
 }
